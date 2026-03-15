@@ -38,9 +38,6 @@ defineExpose({ isOpen, toggle })
 
     <!-- Right actions -->
     <div class="flex items-center gap-1">
-      <!-- Dark mode toggle -->
-      <UiThemeToggle />
-
       <!-- Hamburger -->
       <button
         class="flex items-center justify-center w-8 h-8 rounded-md text-label-secondary dark:text-label-secondary-dark hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-200 focus-ring"

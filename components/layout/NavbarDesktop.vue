@@ -35,9 +35,6 @@ defineProps<{
 
     <!-- Right actions -->
     <div class="flex items-center gap-1">
-      <!-- Dark mode toggle -->
-      <UiThemeToggle />
-
       <!-- CTA — Apple blue pill -->
       <a href="#contact" class="btn-primary text-[14px] !py-[6px] !px-[14px]">
         Contact

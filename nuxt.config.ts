@@ -12,11 +12,20 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
-    fallback: 'dark',
+    preference: 'light',
+    fallback: 'light',
   },
 
   css: [
     '@unocss/reset/tailwind.css',
   ],
+
+  nitro: {
+    serverAssets: [
+      {
+        baseName: 'settings',
+        dir: '../../content/settings',
+      },
+    ],
+  },
 })
