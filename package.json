@@ -24,6 +24,9 @@
     "unocss": "^66.6.6",
     "vue": "^3.5.13"
   },
+  "overrides": {
+    "vite": "~6.4.1"
+  },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.28",
     "@types/node": "^25.5.0",
