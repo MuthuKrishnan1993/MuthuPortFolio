@@ -1,0 +1,59 @@
+{
+  "badge": "Selected Work",
+  "heading1": "Brands I've helped",
+  "heading2": "ship to millions.",
+  "subtitle": "Large-scale e-commerce platforms built with Vue, Nuxt, and TypeScript — serving global audiences with performance-first frontends.",
+  "projects": [
+    {
+      "name": "The North Face",
+      "url": "https://www.thenorthface.com/en-us",
+      "role": "Senior Frontend Developer",
+      "description": "Built and maintained the global e-commerce platform for The North Face US. Developed high-performance product listing pages, dynamic filtering systems, and immersive brand storytelling experiences that handle millions of monthly visitors.",
+      "tech": ["Nuxt 3", "Vue 3", "TypeScript", "SCSS", "REST API", "LaunchDarkly"],
+      "color": "#000000",
+      "year": "2024",
+      "logo": "TNF",
+      "category": "E-Commerce · Global Retail"
+    },
+    {
+      "name": "Vans",
+      "url": "https://www.vans.com/en-us",
+      "role": "Senior Frontend Developer",
+      "description": "Contributed to the Vans US digital storefront — a high-traffic e-commerce platform. Implemented responsive product galleries, AI-powered search integration, and scroll-driven editorial layouts for seasonal campaigns.",
+      "tech": ["Nuxt 3", "Vue 3", "TypeScript", "Optimizely", "CaaS", "A/B Testing"],
+      "color": "#c4161c",
+      "year": "2023",
+      "logo": "VANS",
+      "category": "E-Commerce · Lifestyle Brand"
+    },
+    {
+      "name": "Timberland",
+      "url": "https://www.timberland.com/en-us",
+      "role": "Frontend Developer",
+      "description": "Developed key frontend modules for Timberland's US e-commerce experience. Focused on collection grid layouts, image-heavy hero components with lazy-loading, and a seamless cart/checkout flow optimized for conversion.",
+      "tech": ["Nuxt 3", "Vue 3", "TypeScript", "GTM", "Optimizely", "REST API"],
+      "color": "#d2982a",
+      "year": "2022",
+      "logo": "TBL",
+      "category": "E-Commerce · Outdoor Footwear"
+    },
+    {
+      "name": "Planet Sports Asia",
+      "url": "https://www.planetsports.asia",
+      "role": "Frontend Developer",
+      "description": "Built the frontend for Southeast Asia's leading multi-brand sports retailer. Developed the product discovery experience, mega-menu navigation, promotional banner systems, and localized checkout flow for the Indonesian market.",
+      "tech": ["Vue.js", "Nuxt", "JavaScript", "SCSS", "REST API", "i18n"],
+      "color": "#e63946",
+      "year": "2021",
+      "logo": "PS",
+      "category": "E-Commerce · Multi-Brand Retail"
+    }
+  ],
+  "stats": [
+    { "value": "4", "label": "Global Brands" },
+    { "value": "50M+", "label": "Monthly Visitors" },
+    { "value": "3+", "label": "Years Shipping" }
+  ],
+  "ctaLabel": "Let's work together",
+  "ctaHref": "#contact"
+}

@@ -1,0 +1,42 @@
+{
+  "heading": "Let's build something great together.",
+  "subheading": "Currently open to senior frontend roles, freelance projects, and interesting collaborations.",
+  "email": "krishnan.kumaran92@gmail.com",
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com",
+      "icon": "i-lucide-github"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com",
+      "icon": "i-lucide-linkedin"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com",
+      "icon": "i-lucide-twitter"
+    }
+  ],
+  "navLinks": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Blog",
+      "href": "#blog"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "copyright": "Muthukrishnan",
+  "tagline": "Crafted with Vue 3, Nuxt 3, and attention to detail."
+}

@@ -1,0 +1,66 @@
+{
+  "badge": "About Me",
+  "heading1": "Building the web",
+  "heading2": "one pixel at a time.",
+  "avatarText": "MK",
+  "introHeading": "Hi, I'm Muthukrishnan — a senior frontend developer who believes the web should feel alive.",
+  "bio": [
+    "I've spent the last 5+ years crafting interfaces that merge thoughtful design with engineering precision. My work lives at the intersection of performance and aesthetics — where sub-second load times meet fluid 60fps animations.",
+    "I specialize in the Vue ecosystem — Vue 3, Nuxt 3, and TypeScript are my daily tools. But what truly excites me is pushing the boundaries of what's possible in the browser: WebGL visualizations, complex GSAP timelines, and design systems that scale from a single component to an entire product.",
+    "When I'm not writing code, you'll find me exploring new interaction patterns, contributing to open-source, or deep-diving into browser rendering internals. I believe great frontend development is equal parts engineering discipline and creative intuition."
+  ],
+  "quickFacts": [
+    { "label": "Experience", "value": "5+ years" },
+    { "label": "Focus", "value": "Frontend & UI" },
+    { "label": "Stack", "value": "Vue · Nuxt · TS", "highlight": true },
+    { "label": "Location", "value": "India" }
+  ],
+  "journey": [
+    {
+      "period": "2019 — 2020",
+      "role": "Frontend Developer",
+      "company": "Started building with Vue & React",
+      "description": "Fell in love with component-driven architecture and reactive state management. Built production SPAs from day one."
+    },
+    {
+      "period": "2020 — 2022",
+      "role": "Mid-Level Frontend Engineer",
+      "company": "Scaled to complex applications",
+      "description": "Led migration of legacy jQuery codebases to Vue 3 with TypeScript. Introduced design systems and automated testing pipelines."
+    },
+    {
+      "period": "2022 — 2024",
+      "role": "Senior Frontend Developer",
+      "company": "Architecture & mentorship",
+      "description": "Architected micro-frontend solutions, mentored junior developers, and drove adoption of SSR with Nuxt 3 for performance-critical projects."
+    },
+    {
+      "period": "2024 — Present",
+      "role": "Senior Frontend Developer",
+      "company": "Pushing boundaries",
+      "description": "Specializing in WebGL experiences, advanced animation systems, and building tools that bridge design and engineering."
+    }
+  ],
+  "philosophy": [
+    {
+      "icon": "i-lucide-layers",
+      "title": "Craft over code",
+      "text": "Every pixel, every transition, every interaction is a chance to create something that feels inevitable — not just functional."
+    },
+    {
+      "icon": "i-lucide-zap",
+      "title": "Performance is UX",
+      "text": "A beautiful interface that loads slowly is a broken interface. I obsess over bundle size, paint timing, and perceived speed."
+    },
+    {
+      "icon": "i-lucide-git-branch",
+      "title": "Simplicity scales",
+      "text": "The best architecture is the one you can explain in five minutes. I favour composition over configuration, and clarity over cleverness."
+    },
+    {
+      "icon": "i-lucide-heart",
+      "title": "Empathy-driven",
+      "text": "Code is for humans first, machines second. I write for the developer who maintains it at 2 AM and the user who just wants it to work."
+    }
+  ]
+}

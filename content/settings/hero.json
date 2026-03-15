@@ -1,0 +1,91 @@
+{
+  "badge": "Open to opportunities · 2025",
+  "name1": "Muthu",
+  "name2": "krishnan",
+  "availableForWork": true,
+  "subtitle": "Building fast, beautiful & accessible digital experiences.",
+  "roles": [
+    "Senior Frontend Developer",
+    "Vue 3 Specialist",
+    "UI / UX Engineer",
+    "Nuxt & TypeScript",
+    "Magento Theme development"
+  ],
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "+",
+      "label": "Years Exp."
+    },
+    {
+      "value": 50,
+      "suffix": "+",
+      "label": "Projects"
+    },
+    {
+      "value": 20,
+      "suffix": "+",
+      "label": "Technologies"
+    }
+  ],
+  "techPills": [
+    {
+      "label": "Vue 3",
+      "color": "#42b883"
+    },
+    {
+      "label": "TypeScript",
+      "color": "#3178c6"
+    },
+    {
+      "label": "Nuxt 3",
+      "color": "#00dc82"
+    },
+    {
+      "label": "Three.js",
+      "color": "#86868b"
+    },
+    {
+      "label": "GSAP",
+      "color": "#88ce02"
+    },
+    {
+      "label": "UnoCSS",
+      "color": "#858df8"
+    },
+    {
+      "label": "Node.js",
+      "color": "#6da55f"
+    },
+    {
+      "label": "Postgres",
+      "color": "#336791"
+    },
+    {
+      "label": "React",
+      "color": "#61dafb"
+    }
+  ],
+  "ctaPrimary": {
+    "label": "View Projects",
+    "href": "#projects"
+  },
+  "ctaSecondary": {
+    "label": "Download CV",
+    "href": "/cv.pdf"
+  },
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com"
+    }
+  ]
+}
