@@ -22,10 +22,11 @@
     "radix-vue": "^1.9.13",
     "three": "^0.183.2",
     "unocss": "^66.6.6",
+    "vite": "6.3.7",
     "vue": "^3.5.13"
   },
   "overrides": {
-    "vite": "~6.3.7"
+    "vite": "6.3.7"
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.28",
