@@ -25,7 +25,7 @@
     "vue": "^3.5.13"
   },
   "overrides": {
-    "vite": "~6.4.1"
+    "vite": "~6.3.7"
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.28",
