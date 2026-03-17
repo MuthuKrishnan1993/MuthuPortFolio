@@ -1,0 +1,81 @@
+/* Design system — dark indigo/rose theme matching geometric hero */
+
+:root {
+  --card: #0a0a12;
+  --ring: #6366f1;
+  --input: #1a1a2e;
+  --muted: #111122;
+  --accent: #1e1b4b;
+  --border: #1e1e3a;
+  --radius: 0.5rem;
+  --chart-1: #6366f1;
+  --chart-2: #818cf8;
+  --chart-3: #f43f5e;
+  --chart-4: #fb7185;
+  --chart-5: #8b5cf6;
+  --popover: #0a0a12;
+  --primary: #6366f1;
+  --sidebar: #060609;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+  --secondary: #1e1b4b;
+  --background: #030303;
+  --font-serif: Georgia, serif;
+  --foreground: #e2e2f5;
+  --destructive: #f43f5e;
+  --shadow-blur: 10px;
+  --shadow-color: hsl(240 30% 8%);
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.3;
+  --sidebar-ring: #6366f1;
+  --sidebar-accent: #1e1b4b;
+  --sidebar-border: #1e1e3a;
+  --card-foreground: #e2e2f5;
+  --shadow-offset-x: 0px;
+  --shadow-offset-y: 4px;
+  --sidebar-primary: #6366f1;
+  --muted-foreground: #a0a0c0;
+  --accent-foreground: #e2e2f5;
+  --popover-foreground: #e2e2f5;
+  --primary-foreground: #ffffff;
+  --sidebar-foreground: #e2e2f5;
+  --secondary-foreground: #c7d2fe;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #e2e2f5;
+  --sidebar-primary-foreground: #ffffff;
+}
+
+.dark {
+  --card: #0a0a12;
+  --ring: #818cf8;
+  --input: #1a1a2e;
+  --muted: #111122;
+  --accent: #1e1b4b;
+  --border: #1e1e3a;
+  --chart-1: #818cf8;
+  --chart-2: #a5b4fc;
+  --chart-3: #fb7185;
+  --chart-4: #fda4af;
+  --chart-5: #a78bfa;
+  --popover: #0a0a12;
+  --primary: #818cf8;
+  --sidebar: #060609;
+  --secondary: #2d2b55;
+  --background: #030303;
+  --foreground: #f0f0ff;
+  --destructive: #fb7185;
+  --sidebar-ring: #818cf8;
+  --sidebar-accent: #1e1b4b;
+  --sidebar-border: #1e1e3a;
+  --card-foreground: #f0f0ff;
+  --sidebar-primary: #818cf8;
+  --muted-foreground: #b0b0d0;
+  --accent-foreground: #f0f0ff;
+  --popover-foreground: #f0f0ff;
+  --primary-foreground: #030303;
+  --sidebar-foreground: #f0f0ff;
+  --secondary-foreground: #c7d2fe;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #f0f0ff;
+  --sidebar-primary-foreground: #030303;
+}

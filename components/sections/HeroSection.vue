@@ -39,14 +39,14 @@ const stats = computed(() => heroContent.value?.stats ?? [
 ])
 
 const techPills = computed(() => heroContent.value?.techPills ?? [
-  { label: 'Vue 3', color: '#42b883' },
-  { label: 'TypeScript', color: '#3178c6' },
-  { label: 'Nuxt 3', color: '#00dc82' },
-  { label: 'Three.js', color: '#86868b' },
-  { label: 'GSAP', color: '#88ce02' },
-  { label: 'UnoCSS', color: '#858df8' },
-  { label: 'Node.js', color: '#6da55f' },
-  { label: 'Postgres', color: '#336791' },
+  { label: 'Vue 3', color: '#818cf8' },
+  { label: 'TypeScript', color: '#60a5fa' },
+  { label: 'Nuxt 3', color: '#34d399' },
+  { label: 'Three.js', color: '#a78bfa' },
+  { label: 'GSAP', color: '#fbbf24' },
+  { label: 'UnoCSS', color: '#c084fc' },
+  { label: 'Node.js', color: '#4ade80' },
+  { label: 'Postgres', color: '#38bdf8' },
 ])
 
 const roles = computed(() => heroContent.value?.roles ?? [
@@ -177,25 +177,16 @@ onBeforeUnmount(() => {
 <template>
   <section
     ref="sectionRef"
-    class="relative w-full h-screen overflow-hidden bg-[#f5f5f7]"
+    class="relative w-full h-screen overflow-hidden"
   >
-    <!-- ── Background video ──────────────────────────────────── -->
-    <div class="absolute inset-0 overflow-hidden">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/hero-bg.mp4" type="video/mp4" />
-      </video>
-      <!-- Video overlay — softens video and ensures text readability -->
-      <div class="absolute inset-0 bg-[#f5f5f7]/70" />
-    </div>
+    <!-- ── Aurora background ──── -->
+    <UiAuroraBackground class="!absolute inset-0" :show-radial-gradient="true" />
 
     <!-- Bottom fade -->
-    <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-t from-[#f5f5f7] to-transparent" />
+    <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none bg-gradient-to-t from-[#030303] to-transparent z-1" />
+
+    <!-- Top gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none z-1" />
 
     <!-- ── Main content ───────────────────────────────────────── -->
     <div class="hero-content relative z-10 h-full flex flex-col px-8 md:px-16 lg:px-24 xl:px-32">
@@ -210,13 +201,13 @@ onBeforeUnmount(() => {
           <div
             ref="badgeRef"
             class="inline-flex items-center gap-2 self-start mb-8 px-3.5 py-1.5 rounded-full
-                   border border-[#e8e8ed]                   bg-white/60 backdrop-blur-sm opacity-0"
+                   border border-white/8 bg-white/3 backdrop-blur-sm opacity-0"
           >
             <span
               class="w-1.5 h-1.5 rounded-full shrink-0"
-              :class="heroContent?.availableForWork !== false ? 'bg-[#30d158] animate-pulse' : 'bg-[#ff453a]'"
+              :class="heroContent?.availableForWork !== false ? 'bg-emerald-400 animate-pulse' : 'bg-rose-500'"
             />
-            <span class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#1d1d1f]">
+            <span class="text-[11px] font-medium tracking-[0.12em] uppercase text-white/60">
               {{ heroContent?.badge ?? 'Open to opportunities · 2025' }}
             </span>
           </div>
@@ -226,7 +217,7 @@ onBeforeUnmount(() => {
             <!-- Line 1 -->
             <div ref="line1Ref" class="overflow-hidden leading-none pl-0.5">
               <h1
-                class="font-sans font-bold tracking-[-0.045em] text-[#1d1d1f] leading-none"
+                class="font-sans font-bold tracking-[-0.045em] text-white leading-none"
                 style="font-size: clamp(68px, 11vw, 156px)"
               >
                 <span
@@ -237,18 +228,18 @@ onBeforeUnmount(() => {
               </h1>
             </div>
 
-            <!-- Line 2 — accent italic -->
+            <!-- Line 2 — accent color -->
             <div ref="line2Ref" class="overflow-hidden leading-none -mt-1 pl-0.5">
               <h1
-                class="font-sans font-bold tracking-[-0.045em] leading-none"
+                class="font-sans font-bold tracking-[-0.045em] leading-none text-indigo-400"
                 style="font-size: clamp(68px, 11vw, 156px)"
               >
                 <span
                   v-for="(ch, i) in name2"
                   :key="i"
-                  class="n2-char inline-block will-change-transform opacity-0 text-[#0071e3]"
+                  class="n2-char inline-block will-change-transform opacity-0"
                 >{{ ch }}</span>
-                <span class="n2-char inline-block will-change-transform opacity-0 text-[#0071e3]">.</span>
+                <span class="n2-char inline-block will-change-transform opacity-0">.</span>
               </h1>
             </div>
           </div>
@@ -259,7 +250,7 @@ onBeforeUnmount(() => {
               <p
                 v-if="roleVisible"
                 :key="roleIndex"
-                class="absolute inset-0 font-light text-[#6e6e73] tracking-[-0.01em] leading-[1.6]"
+                class="absolute inset-0 font-light text-white/40 tracking-[-0.01em] leading-[1.6]"
                 style="font-size: inherit"
               >
                 {{ roles[roleIndex] }}
@@ -274,10 +265,10 @@ onBeforeUnmount(() => {
               :key="i"
               class="flex flex-col gap-0.5"
             >
-              <span class="text-[32px] font-bold tracking-tight text-[#1d1d1f] leading-none">
+              <span class="text-[32px] font-bold tracking-tight text-white leading-none">
                 <span :class="`stat-num-${i}`">0</span>{{ stat.suffix }}
               </span>
-              <span class="text-[12px] font-normal text-[#6e6e73] uppercase tracking-[0.1em]">
+              <span class="text-[12px] font-normal text-white/40 uppercase tracking-[0.1em]">
                 {{ stat.label }}
               </span>
             </div>
@@ -288,7 +279,7 @@ onBeforeUnmount(() => {
             <a
               :href="heroContent?.ctaPrimary?.href ?? '#projects'"
               class="group inline-flex items-center gap-2 px-6 py-3 rounded-full
-                     bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium
+                     bg-indigo-500 hover:bg-indigo-400 text-white text-[15px] font-medium
                      transition-all duration-200 hover:gap-3"
             >
               {{ heroContent?.ctaPrimary?.label ?? 'View Projects' }}
@@ -298,8 +289,8 @@ onBeforeUnmount(() => {
               :href="heroContent?.ctaSecondary?.href ?? '/cv.pdf'"
               target="_blank"
               class="inline-flex items-center gap-2 px-6 py-3 rounded-full
-                     border border-[#d2d2d7]                     text-[#1d1d1f] text-[15px] font-medium
-                     hover:border-[#0071e3] hover:text-[#0071e3]
+                     border border-white/15 text-white/80 text-[15px] font-medium
+                     hover:border-indigo-400 hover:text-indigo-300
                      transition-all duration-200"
             >
               {{ heroContent?.ctaSecondary?.label ?? 'Download CV' }} ↓
@@ -314,15 +305,16 @@ onBeforeUnmount(() => {
             v-for="(pill, i) in techPills"
             :key="i"
             class="tech-pill opacity-0 flex items-center gap-2.5 px-4 py-2.5 rounded-full
-                   bg-white/70 backdrop-blur-md
-                   border border-[#e8e8ed]                   hover:scale-105 transition-transform duration-200 cursor-default"
+                   bg-white/5 backdrop-blur-md
+                   border border-white/10
+                   hover:scale-105 transition-transform duration-200 cursor-default"
             :style="{ animationDelay: `${i * 0.3}s` }"
           >
             <span
               class="w-2 h-2 rounded-full shrink-0"
               :style="{ backgroundColor: pill.color }"
             />
-            <span class="text-[13px] font-medium text-[#1d1d1f] whitespace-nowrap">
+            <span class="text-[13px] font-medium text-white/70 whitespace-nowrap">
               {{ pill.label }}
             </span>
           </div>
@@ -339,7 +331,8 @@ onBeforeUnmount(() => {
             v-for="link in (heroContent?.socialLinks ?? [{ label: 'GitHub', href: '#' }, { label: 'LinkedIn', href: '#' }, { label: 'Twitter', href: '#' }])"
             :key="link.label"
             :href="link.href"
-            class="text-[12px] font-medium uppercase tracking-[0.15em] text-[#6e6e73]                   hover:text-[#1d1d1f] transition-colors duration-200"
+            class="text-[12px] font-medium uppercase tracking-[0.15em] text-white/30
+                   hover:text-white/70 transition-colors duration-200"
           >
             {{ link.label }}
           </a>
@@ -347,10 +340,10 @@ onBeforeUnmount(() => {
 
         <!-- Scroll indicator -->
         <div class="flex flex-col items-center gap-2">
-          <div class="w-px h-10 relative overflow-hidden bg-[#d2d2d7] rounded-full">
-            <div class="absolute top-0 left-0 w-full h-1/2 bg-[#0071e3] rounded-full animate-scroll-line" />
+          <div class="w-px h-10 relative overflow-hidden bg-white/15 rounded-full">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-indigo-400 rounded-full animate-scroll-line" />
           </div>
-          <span class="text-[10px] tracking-[0.2em] uppercase text-[#ababab]">Scroll</span>
+          <span class="text-[10px] tracking-[0.2em] uppercase text-white/30">Scroll</span>
         </div>
 
       </div>
@@ -374,4 +367,5 @@ onBeforeUnmount(() => {
 .animate-scroll-line {
   animation: scroll-line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
+
 </style>
